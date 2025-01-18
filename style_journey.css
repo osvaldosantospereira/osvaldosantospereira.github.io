@@ -500,6 +500,13 @@ nav {
       width: 100%; /* Ajusta o conteúdo para ocupar toda a largura */
       padding: 15px 20px; /* Ajusta o padding para dar mais espaço */
     }
+    
+    .experience h2{
+      font-size: 3rem;
+      margin-top: -40px; /* Ajusta a posição do título, diminuindo o espaço acima */
+      margin-bottom: 2rem; /* Ajusta o espaço abaixo do título */
+      background-color: var(--second-bg-color);
+    }
 
 }
   
