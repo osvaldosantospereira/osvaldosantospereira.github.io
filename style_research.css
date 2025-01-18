@@ -442,6 +442,10 @@ nav {
       margin: 1rem;
   }
 
+  .research-areas {
+    margin-top: -400px; /* Ajuste o valor para posicionar melhor */
+  }
+
 }
   
   

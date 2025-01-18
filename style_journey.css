@@ -502,11 +502,7 @@ nav {
     }
 
     .experience {
-        margin-top: -150px; /* Ajuste o valor para posicionar melhor */
-    }
-
-    .journey-content {
-        top: 20%; /* Ajuste a posição vertical */
+        margin-top: -400px; /* Ajuste o valor para posicionar melhor */
     }
 
 }

@@ -385,6 +385,10 @@ nav {
       font-size: 2rem; /* Reduz o tamanho do texto */
     }
 
+    .notes-container {
+      margin-top: -400px; /* Ajuste o valor para posicionar melhor */
+    }
+
 }
   
   
