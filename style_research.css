@@ -348,7 +348,23 @@ nav {
   color: var(--bg-color);
 }
 
+.footer_credit {
+  background-color: var(--bg-color);  /* Cor de fundo escura */
+  color: #fff;  /* Texto branco */
+  text-align: center;
+  padding: 15px;
+  font-size: 11px;
+  width: 100%;
+}
 
+.footer_credit a {
+  color: #ffffff;  /* Cor dourada para o link */
+  text-decoration: none;
+}
+
+.footer_credit a:hover {
+  text-decoration: underline;
+}
 
 
 @media (max-width: 768px) {

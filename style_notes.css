@@ -307,7 +307,23 @@ nav {
   flex-wrap: wrap;
   margin: 5rem 0 10rem;
 }
+.footer_credit {
+  background-color: var(--bg-color);  /* Cor de fundo escura */
+  color: #fff;  /* Texto branco */
+  text-align: center !important;
+  padding: 15px;
+  font-size: 11px;
+  width: 100%;
+}
 
+.footer_credit a {
+  color: #ffffff;  /* Cor dourada para o link */
+  text-decoration: none;
+}
+
+.footer_credit a:hover {
+  text-decoration: underline;
+}
 
 
 
