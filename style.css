@@ -318,23 +318,43 @@ nav {
 }
 
 .footer .social a {
-  font-size: 25px;
+  font-size: 24px;
   color: var(--main-color);
-  width: 42px;
-  height: 42px;
-  line-height: 42px;
-  display: inline-block;
-  text-align: center;
+  display: inline-flex; /* Flex para centralizar */
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  margin: 0 10px;
+  margin: 0 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer .social a span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--main-color); /* Contorno */
+  border-radius: 50%;
+  padding: 8px;
   transition: 0.3s ease-in-out;
+  
+}
+
+.footer .social a:hover span {
+  background-color: var(--main-color); /* Fundo ao passar o mouse */
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgba(var(--main-color), 0.8); /* Aumenta o brilho no hover */
 }
 
 .footer .social a:hover {
-  transform: scale(1.2) translateY(-10px);
-  background-color: var(--main-color);
-  color: rgb(255, 255, 255);
-  box-shadow: none;
+  transform: scale(1.15); /* Aumento sutil */
+  background-color: var(--main-color); /* Fundo sólido ao passar o mouse */
+  color: white; /* Ícone branco ao passar o mouse */
 }
 
 .footer .social:last-child {

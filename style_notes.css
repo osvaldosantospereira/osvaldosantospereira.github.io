@@ -158,6 +158,11 @@ nav {
   overflow: hidden;
 }
 
+.heading{
+  text-align: center;
+  margin: 5rem 0;
+}
+
 .background-image {
   position: absolute;
   top: 0;
@@ -170,7 +175,6 @@ nav {
   background-repeat: no-repeat;
   z-index: -1;
 }
-
 .notes-content {
   position: absolute;
   top: 25%;
@@ -180,8 +184,7 @@ nav {
   text-align: center;
   z-index: 1;
 }
-
-  
+ 
 .notes-content h1 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 7rem; /* Ajuste o tamanho do título */
@@ -191,122 +194,83 @@ nav {
     transition: opacity 0.3s ease, transform 0.5s ease;
 }
 
-.heading{
-  text-align: center;
+.books-section {
+  display: flex;
+  justify-content: center;
   margin: 5rem 0;
 }
 
-.notes-section {
+.book-container {
+  display: flex;
+  gap: 2rem;
   margin-top: -350px;
-  padding: 5rem 10%;
-  text-align: center;
-  background-color: var(--second-bg-color);
-  color: var(--text-color);
+  padding: 8rem 5% 4rem;
+  align-items: stretch;
 }
 
-.notes-container h2 {
-  font-size: 3rem;
-  color: var(--text-color);
-  margin-bottom: 2rem;
+
+.book-image {
+  width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+  max-width: 250px; /* Ajusta um tamanho máximo */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 8px; /* Cantos arredondados para um visual mais suave */
+  margin-bottom: 5rem; /* Espaço entre a imagem e o título */
 }
 
-.notes-container p {
-  font-size: 1.6rem;
-  line-height: 2.5rem;
-  margin: 1.5rem 0;
-}
-
-.contact-list {
-  list-style: none;
-  padding: 0;
-}
-
-.contact-list li {
-  margin: 0.5rem 0;
-}
-
-.contact-list a {
-  color: rgba(101, 199, 255, 0.336);
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.contact-list a:hover {
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.resources {
-  margin-top: 5rem;
-}
-
-.resources h3 {
-  font-size: 2rem;
-  color: var(--main-color);
-  margin-top: 4rem;
-  margin-bottom: 2rem;
-}
-
-.resource-list {
-  list-style: none;
-  padding: 0;
-}
-
-.resource-list li {
-  margin: 2rem 0;
-  text-align: left;
-  background: rgba(34, 34, 34, 0.8);
-  padding: 1.5rem;
+.book-box {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--main-color);
+  padding: 2rem;
+  width: 500px; 
   border-radius: 8px;
-  transition: transform 0.3s ease;
+  text-align: justify;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Garante altura total */
+  overflow: visible !important; 
 }
 
-.resource-list li:hover {
-  transform: translateY(-5px);
-}
-
-.resource-list h4 a {
-  font-size: 1.8rem;
-  color: var(--text-color);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.resource-list h4 a:hover {
+.book-box h2 {
   color: var(--main-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.resource-list p {
+.book-box p {
   font-size: 1.4rem;
-  line-height: 2rem;
-  color: var(--main-color);
-  margin-top: 0.5rem;
-}
-
-.btn {
-  display: inline-block;
-  padding: 1rem 2.5rem;
-  margin: 1rem;
-  font-size: 1.6rem;
-  font-weight: bold;
   color: var(--text-color);
-  background-color: rgba(101, 199, 255, 0.336);
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s, transform 0.2s;
+  margin-bottom: 1.5rem;
+  flex-grow: 1; /* Permite que o parágrafo cresça e preencha o espaço disponível */
+  overflow: visible;
 }
 
-.btn:hover {
-  background-color: rgba(101, 199, 255, 0.336);
+.book-box a {
+  display: inline-block;
+  background: var(--main-color);
+  color: #292929;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+  margin-top: auto;
+}
+
+.book-box a:hover {
+  background: rgba(101, 199, 255, 0.9);
   transform: scale(1.05);
 }
 
-.contact-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin: 5rem 0 10rem;
+.book-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
+
 .footer_credit {
   background-color: var(--bg-color);  /* Cor de fundo escura */
   color: #fff;  /* Texto branco */
@@ -324,8 +288,6 @@ nav {
 .footer_credit a:hover {
   text-decoration: underline;
 }
-
-
 
 @media (max-width: 768px) {
     .navbar {
@@ -399,6 +361,15 @@ nav {
   
     .role-text {
       font-size: 2rem; /* Reduz o tamanho do texto */
+    }
+
+    .book-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .book-box {
+      width: 90%;
     }
 
 }
