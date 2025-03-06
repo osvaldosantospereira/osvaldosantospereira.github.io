@@ -197,6 +197,9 @@ nav {
     background-color: var(--second-bg-color);
     color: var(--text-color);
   }
+  .repos-section h2{
+    font-size: 1.6rem;
+  }
   
   .heading {
     text-align: center;
@@ -251,6 +254,7 @@ nav {
     display: none;
     opacity: 0;
     transition: opacity 0.3s ease;
+    font-size: 1.3rem;
 }
   
 /* Exibe a descrição ao passar o mouse */
