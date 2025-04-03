@@ -292,6 +292,7 @@ nav {
   transition: 0.4s ease-in-out;
 }
 
+
 .heading {
   font-size: 3rem;
   font-weight: bold;
@@ -299,6 +300,37 @@ nav {
   text-align: center;
   margin-bottom: 2rem;
   margin-top: 1rem;
+}
+
+.about-me-section {
+  text-align: center; /* Centraliza todo o texto */
+  padding: 50px 20px; /* Espaçamento interno */
+  background-color: #080808; /* Cor de fundo suave */
+}
+
+.about-me-section h2 {
+  font-size: 3rem;
+  margin-top: -50px;
+  margin-bottom: 2rem; /* Ajusta o espaço abaixo do título */
+}
+
+.about-me-text p {
+  margin-bottom: 15px;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: justify;
+  line-height: 2.0;
+  max-width: 800px; /* Limita a largura do texto */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.separator {
+  border: none; /* Remove a borda padrão */
+  height: 1px; /* Define a espessura da linha */
+  background-color: var(--main-color); /* Usa a cor principal */
+  width: 70%; /* Define a largura da linha */
+  margin: 20px auto; /* Centraliza e dá espaço acima/abaixo */
 }
 
 /* Ajuste no footer */
@@ -364,7 +396,7 @@ nav {
 
 .education {
   padding: 100px 15px;
-  margin-top: 5px;
+  margin-top: 50px;
   margin-bottom: 0; /* Remove a margem inferior extra */
   background: var(--bg-color);
 }
@@ -650,6 +682,64 @@ nav {
   }
 }
 
+.contact-content {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  text-align: center;
+  z-index: 1;
+}
+
+  
+.contact-content h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 7rem; /* Ajuste o tamanho do título */
+    color: rgba(101, 199, 255, 0.774);
+    margin: 0;
+    opacity: 1;
+    transition: opacity 0.3s ease, transform 0.5s ease;
+}
+
+.contact-links {
+  margin-top: 10px;
+  padding: 5rem 10%;
+  text-align: center;
+  position: relative; /* Garante que o z-index funcione */
+  z-index: 10; /* Valor superior para ficar acima de outros elementos */
+  background-color: #1b1b1b42;
+  color: var(--text-color);
+}
+
+.contact-container h2 {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
+
+.contact-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-container li {
+  margin: 10px 0; /* Espaçamento entre os itens */
+}
+
+.contact-container a {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.8rem;
+  color: var(--main-color);
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-container a:hover {
+  color: white; /* Cor ao passar o mouse */
+  transform: translateY(-2px); /* Leve deslocamento */
+}
 
 
 
