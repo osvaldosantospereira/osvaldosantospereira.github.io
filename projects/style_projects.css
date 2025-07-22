@@ -402,36 +402,5 @@ nav {
     }
 
 }
-  .project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 4rem;
-}
-
-.project-card {
-  background-color: rgba(34, 34, 34, 0.85);
-  padding: 2rem;
-  border-radius: 8px;
-  border: 1px solid rgba(101, 199, 255, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: left;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(101, 199, 255, 0.2);
-}
-
-.project-card h4 {
-  font-size: 2rem;
-  color: var(--main-color);
-  margin-bottom: 1rem;
-}
-
-.project-card p {
-  font-size: 1.5rem;
-  color: var(--text-color);
-}
-
+  
   
